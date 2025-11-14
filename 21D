@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Método 21 Dias de Alta Produtividade</title>
-  <meta name="description" content="Método 21 Dias de Alta Produtividade — transforme sua rotina com 10 minutos/dia." />
+  <title>Método 21 Dias de Alta Produtividade — Destrave Seu Foco e Disciplina</title>
+  <meta name="description" content="Método 21 Dias de Alta Produtividade — transforme sua rotina com 10 minutos/dia. Oferta por tempo limitado!" />
   <style>
-    :root{--accent:#2b6cb0;--accent-2:#f6ad55;--bg:#0f1724;--card:#ffffff;--muted:#6b7280}
+    :root{--accent:#e53e3e;--accent-2:#f6ad55;--bg:#0f1724;--card:#ffffff;--muted:#6b7280;--success:#38a169}
     *{box-sizing:border-box}
     body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; line-height:1.5; color:#0b1220}
     .container{max-width:1100px;margin:0 auto;padding:28px}
@@ -14,23 +14,35 @@
     .logo{display:flex;align-items:center;gap:10px}
     .logo .brand{font-weight:700;font-size:18px}
     .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;padding:28px 0}
-    .eyebrow{display:inline-block;background:linear-gradient(90deg,var(--accent),var(--accent-2));-webkit-background-clip:text;color:transparent;font-weight:700}
-    h1{font-size:34px;margin:12px 0}
-    p.lead{color:var(--muted);font-size:16px}
-    .cta{display:flex;gap:12px;margin-top:18px}
-    .btn{background:var(--accent);color:#fff;padding:12px 18px;border-radius:10px;text-decoration:none;font-weight:700}
+    .eyebrow{display:inline-block;background:linear-gradient(90deg,var(--accent),var(--accent-2));-webkit-background-clip:text;color:transparent;font-weight:700;text-transform:uppercase;font-size:14px}
+    h1{font-size:38px;margin:12px 0;line-height:1.1}
+    p.lead{color:#334155;font-size:18px;font-weight:500}
+    .cta{display:flex;gap:12px;margin-top:24px;flex-wrap:wrap}
+    .btn{background:var(--accent);color:#fff;padding:14px 24px;border-radius:10px;text-decoration:none;font-weight:800;text-transform:uppercase;transition:background 0.3s}
+    .btn:hover{background:#c53030}
     .btn.secondary{background:#eef2ff;color:var(--accent);border:1px solid #dbeafe}
-    .card{background:#fff;border-radius:12px;padding:20px;box-shadow:0 6px 18px rgba(11,17,32,0.06)}
-    .price{font-size:28px;font-weight:800;color:#0b1220}
+    .card{background:#fff;border-radius:12px;padding:20px;box-shadow:0 10px 20px rgba(11,17,32,0.1)}
+    .price{font-size:32px;font-weight:800;color:var(--accent)}
+    .old-price{font-size:18px;color:var(--muted);text-decoration:line-through;margin-right:8px}
     .features{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:20px}
-    .feature{background:#f8fafc;padding:12px;border-radius:8px;font-size:14px}
-    section{padding:28px 0;border-top:1px solid #eef2f6}
-    .phases{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-    .phase{background:#fff;padding:16px;border-radius:10px}
+    .feature{background:#f8fafc;padding:12px;border-radius:8px;font-size:14px;font-weight:600;display:flex;align-items:center;gap:6px;color:var(--success)}
+    .feature::before{content:'\2713';font-weight:900;font-size:16px}
+    section{padding:40px 0;border-top:1px solid #eef2f6}
+    .phases{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .phase{background:#fff;padding:20px;border-radius:10px;border:1px solid #eef2f6;box-shadow:0 4px 6px rgba(0,0,0,0.05)}
+    .phase h3{color:var(--accent);margin-top:0}
     ul.benefits{list-style:none;padding:0;margin:0}
-    ul.benefits li{padding:8px 0;border-bottom:1px dashed #eef2f6}
-    footer{padding:28px 0;color:var(--muted);font-size:14px}
+    ul.benefits li{padding:10px 0;border-bottom:1px dashed #eef2f6;display:flex;align-items:center;gap:8px;font-size:16px}
+    ul.benefits li::before{content:'\2713';color:var(--success);font-weight:900}
+    footer{padding:28px 0;color:var(--muted);font-size:14px;text-align:center}
+    .testimonial{background:#f8fafc;padding:20px;border-radius:10px;margin-bottom:15px;border-left:4px solid var(--accent)}
+    .testimonial p{font-style:italic;color:#334155;margin:0 0 8px 0}
+    .testimonial span{font-weight:700;color:#0b1220}
+    .guarantee{background:#fff;border:2px solid var(--success);padding:20px;border-radius:12px;text-align:center;margin-top:20px}
+    .guarantee h3{color:var(--success);margin-top:0}
+    .urgency-bar{background:var(--accent);color:#fff;padding:10px;text-align:center;font-weight:700;margin-bottom:20px;border-radius:8px}
     @media(max-width:880px){.hero{grid-template-columns:1fr;}.features{grid-template-columns:1fr 1fr}.phases{grid-template-columns:1fr}}
+    @media(max-width:600px){.features{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
@@ -43,27 +55,33 @@
     <main>
       <section class="hero">
         <div>
-          <div class="eyebrow">Programa de Alta Performance</div>
-          <h1>Transforme 21 dias na rotina mais produtiva da sua vida</h1>
-          <p class="lead">Sem depender de motivação. Sem técnicas complicadas. Apenas 10 minutos por dia para destravar foco, disciplina e resultado.</p>
-          <div class="cta">
-            <a href="#compra" class="btn">QUERO COMEÇAR AGORA — R$79</a>
-            <a href="##bonus" class="btn secondary">Ver bônus</a>
+          <div class="eyebrow">O SEGREDO DA ALTA PERFORMANCE</div>
+          <h1>Destrave Seu Foco e Disciplina em Apenas 21 Dias (10 Minutos/Dia)</h1>
+          <p class="lead">Pare de depender de motivação. Este método prático e direto ao ponto transforma sua rotina em 3 semanas, garantindo resultados consistentes e duradouros.</p>
+          
+          <div class="urgency-bar">
+            OFERTA RELÂMPAGO: De R$ 197 por apenas R$ 49,99! Válida por tempo limitado.
           </div>
+
+          <div class="cta">
+            <a href="#compra" class="btn">SIM, QUERO MINHA ROTINA DE ALTA PERFORMANCE</a>
+          </div>
+          <p style="font-size:14px;color:var(--success);margin-top:8px;font-weight:600">Acesso Imediato. Pagamento Único. Garantia de 7 Dias.</p>
 
           <div class="features" style="margin-top:22px">
             <div class="feature">21 dias de tarefas práticas</div>
-            <div class="feature">Checklist diário</div>
-            <div class="feature">Planner semanal + áudios</div>
+            <div class="feature">Checklist diário e Planner</div>
+            <div class="feature">Foco e disciplina garantidos</div>
           </div>
         </div>
 
+        <img src="./img/foco_hero.jpg" alt="Ilustração de foco e produtividade" style="width:100%;max-width:400px;height:auto;border-radius:12px;margin-bottom:20px;display:block;margin-left:auto;margin-right:auto;">
         <aside>
           <div class="card">
             <div style="display:flex;justify-content:space-between;align-items:center">
               <div>
-                <div style="font-size:12px;color:var(--muted)">Oferta especial</div>
-                <div class="price">R$ 79,00</div>
+                <div style="font-size:14px;color:var(--muted);text-transform:uppercase;font-weight:700">Preço Exclusivo Hoje</div>
+                <div style="margin-top:4px"><span class="old-price">R$ 197,00</span><span class="price">R$ 49,99</span></div>
               </div>
               <div style="text-align:right">
                 <div style="font-size:12px;color:var(--muted)">Pagamento único</div>
@@ -72,90 +90,111 @@
             </div>
             <hr style="margin:14px 0;border:none;border-top:1px solid #f1f5f9">
             <ul style="padding:0;margin:0;list-style:none;font-size:14px;color:#334155">
-              <li style="padding:8px 0">PDF completo do método</li>
-              <li style="padding:8px 0">Checklist diário + planner</li>
-              <li style="padding:8px 0">Áudios de ativação (IA)</li>
+              <li style="padding:8px 0;display:flex;align-items:center;gap:6px"><span style="color:var(--success)">&#10003;</span> PDF completo do método</li>
+              <li style="padding:8px 0;display:flex;align-items:center;gap:6px"><span style="color:var(--success)">&#10003;</span> Checklist diário + planner</li>
+              <li style="padding:8px 0;display:flex;align-items:center;gap:6px"><span style="color:var(--success)">&#10003;</span> Áudios de ativação (Bônus)</li>
             </ul>
-            <a id="compra" href="#" class="btn" style="display:block;text-align:center;margin-top:16px">QUERO COMEÇAR</a>
-            <div style="font-size:12px;color:var(--muted);margin-top:8px;text-align:center">Garantia de 7 dias — sem perguntas</div>
+            <a id="compra" href="#" class="btn" style="display:block;text-align:center;margin-top:16px">QUERO APROVEITAR A OFERTA AGORA - R$ 49,99</a>
+            <div style="font-size:12px;color:var(--muted);margin-top:8px;text-align:center">Garantia de 7 dias — risco zero para você</div>
           </div>
         </aside>
       </section>
 
       <section>
-        <h2>Como funciona</h2>
-        <p class="lead">O programa é dividido em 3 fases de 7 dias cada. Cada dia tem uma tarefa clara, exercício prático e micro-reflexão.</p>
+        <img src="./img/21dias_graphic.jpg" alt="Gráfico do Desafio 21 Dias" style="width:100%;height:auto;border-radius:12px;margin-bottom:20px;">
+        <h2>Depoimentos de Quem Já Transformou a Rotina</h2>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px">
+            <div class="testimonial">
+                <p>"Comecei sem acreditar muito e em 2 semanas já tinha rotina consistente. O método é simples e funciona de verdade."</p>
+                <span>— João P.</span>
+            </div>
+            <div class="testimonial">
+                <p>"Menos procrastinação e mais resultados. O melhor investimento que fiz na minha produtividade. Recomendo a todos."</p>
+                <span>— Ana M.</span>
+            </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>O Caminho para a Produtividade: As 3 Fases do Método</h2>
+        <p class="lead">O programa é dividido em 3 fases de 7 dias cada. Cada dia tem uma tarefa clara, exercício prático e micro-reflexão para garantir a construção de um novo hábito.</p>
         <div class="phases">
           <div class="phase">
             <h3>Fase 1 — Reinicialização Mental</h3>
-            <p>Limpeza digital, brain-dump e rituais iniciais.</p>
+            <p>Limpeza digital, brain-dump e rituais iniciais. Você vai eliminar o ruído e preparar sua mente para o foco.</p>
           </div>
           <div class="phase">
             <h3>Fase 2 — Estrutura & Organização</h3>
-            <p>Planejamento semanal, sistema de tarefas e microvitórias.</p>
+            <p>Planejamento semanal, sistema de tarefas e microvitórias. Crie o esqueleto da sua nova rotina produtiva.</p>
           </div>
           <div class="phase">
             <h3>Fase 3 — Execução & Foco Profundo</h3>
-            <p>Blocos de foco, eliminação de distrações e rotina otimizada.</p>
+            <p>Blocos de foco, eliminação de distrações e rotina otimizada. Transforme a teoria em resultados reais e consistentes.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="bonus">
+        <img src="./img/planner.jpg" alt="Imagem de um planner e rotina organizada" style="width:100%;height:auto;border-radius:12px;margin-bottom:20px;">
+        <h2>Bônus Exclusivos: O Que Você Vai Receber Hoje</h2>
+        <ul class="benefits">
+          <li>PDF do Método 21 Dias (Download Imediato)</li>
+          <li>Checklist Diário de Execução (Para nunca se perder)</li>
+          <li>Planner Semanal Editável (Organize sua semana em minutos)</li>
+          <li>Áudios de Ativação para Foco (Use para entrar no estado de flow)</li>
+          <li>**BÔNUS EXTRA:** Guia "Produtividade Sem Sofrimento" (Valor de R$ 49,00)</li>
+        </ul>
+        <div style="text-align:center;margin-top:30px">
+            <a href="#compra" class="btn">QUERO TUDO ISSO POR APENAS R$ 49,99</a>
+        </div>
+      </section>
+
+      <section>
+        <h2>Dúvidas Frequentes</h2>
+        <div style="display:flex;gap:16px;flex-wrap:wrap;align-items:flex-start">
+          <div style="flex:1;min-width:260px">
+            <div style="background:#fff;padding:16px;border-radius:12px;box-shadow:0 6px 14px rgba(11,17,32,0.04)">
+              <p style="margin:6px 0;color:#0b1220"><strong>Quanto tempo por dia?</strong></p>
+              <p style="margin:6px 0;color:var(--muted)">Apenas 10 minutos por dia, em média. O método é desenhado para ser implementado em micro-hábitos, sem sobrecarregar sua rotina.</p>
+              <p style="margin:12px 0 6px 0;color:#0b1220"><strong>Preciso aparecer em vídeos?</strong></p>
+              <p style="margin:6px 0;color:var(--muted)">Não — todo o conteúdo é em PDF e áudios. Você pode consumir o material onde e quando quiser.</p>
+              <p style="margin:12px 0 6px 0;color:#0b1220"><strong>É para quem?</strong></p>
+              <p style="margin:6px 0;color:var(--muted)">Para qualquer pessoa que se sinta sobrecarregada, procrastinando ou que simplesmente queira uma rotina mais produtiva e focada.</p>
+            </div>
+          </div>
+          <div style="flex:1;min-width:220px">
+            <div class="card">
+              <div style="font-size:14px;color:var(--muted)">Pacote Completo</div>
+              <div style="font-size:20px;font-weight:800;margin-top:6px">R$ 49,99</div>
+              <ul style="margin-top:10px;padding:0;list-style:none;font-size:14px">
+                <li style="margin-bottom:4px">PDF + checklist</li>
+                <li style="margin-bottom:4px">Planner semanal</li>
+                <li style="margin-bottom:4px">Áudios IA</li>
+                <li style="margin-bottom:4px">Guia Bônus</li>
+              </ul>
+              <a href="#compra" class="btn" style="display:block;margin-top:12px">GARANTIR MEU ACESSO</a>
+            </div>
           </div>
         </div>
       </section>
 
       <section>
-        <h2>O que você vai receber</h2>
-        <ul class="benefits">
-          <li>PDF do Método 21 Dias (download imediato)</li>
-          <li>Checklist diário de execução</li>
-          <li>Planner semanal editável</li>
-          <li>Áudios de ativação para foco</li>
-          <li>Bônus: guia "Produtividade Sem Sofrimento"</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>Depoimentos</h2>
-        <p style="color:var(--muted)">"Comecei sem acreditar muito e em 2 semanas já tinha rotina consistente." — João P.</p>
-        <p style="color:var(--muted)">"Menos procrastinação e mais resultados. Recomendo." — Ana M.</p>
-      </section>
-
-      <section>
-        <h2>Garantia</h2>
-        <p class="lead">Teste por 7 dias. Se não perceber melhora, devolvemos seu dinheiro integralmente. Sem perguntas.</p>
-      </section>
-
-      <section style="padding-bottom:60px">
-        <h2>Oferta Especial</h2>
-        <div style="display:flex;gap:16px;flex-wrap:wrap;align-items:center">
-          <div style="flex:1;min-width:220px">
-            <div class="card">
-              <div style="font-size:14px;color:var(--muted)">Pacote Completo</div>
-              <div style="font-size:20px;font-weight:800;margin-top:6px">R$ 79,00</div>
-              <ul style="margin-top:10px;padding:0;list-style:none">
-                <li>PDF + checklist</li>
-                <li>Planner semanal</li>
-                <li>Áudios IA</li>
-              </ul>
-              <a href="#" class="btn" style="display:block;margin-top:12px">QUERO AGORA</a>
-            </div>
-          </div>
-
-          <div style="flex:1;min-width:260px">
-            <div style="background:#fff;padding:16px;border-radius:12px;box-shadow:0 6px 14px rgba(11,17,32,0.04)">
-              <h3>Perguntas frequentes</h3>
-              <p style="margin:6px 0;color:var(--muted)"><strong>Quanto tempo por dia?</strong> 10 minutos por dia, em média.</p>
-              <p style="margin:6px 0;color:var(--muted)"><strong>Preciso apareçer em vídeos?</strong> Não — todo o conteúdo é em PDF e áudios.</p>
-              <p style="margin:6px 0;color:var(--muted)"><strong>É para quem?</strong> Para qualquer pessoa que queira rotina mais produtiva.</p>
-            </div>
-          </div>
+        <div class="guarantee">
+            <h3>Sua Satisfação é 100% Garantida</h3>
+            <p class="lead">Teste o Método 21 Dias por 7 dias. Se você não sentir que sua rotina melhorou, que seu foco aumentou ou que o método não é para você, **devolvemos seu dinheiro integralmente.** Sem perguntas, sem burocracia.</p>
+            <p style="font-weight:700;color:#0b1220">Seu risco é ZERO.</p>
+        </div>
+        <div style="text-align:center;margin-top:30px">
+            <a href="#compra" class="btn">COMEÇAR MINHA TRANSFORMAÇÃO AGORA</a>
         </div>
       </section>
 
     </main>
 
     <footer>
-      <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px">
+      <div style="padding-top:20px;border-top:1px solid #eef2f6">
         <div>© 2025 Método 21 Dias — Todos os direitos reservados</div>
-        <div style="color:var(--muted)">Termos • Privacidade</div>
+        <div style="margin-top:4px"><a href="#" style="color:var(--muted);text-decoration:none">Termos de Uso</a> • <a href="#" style="color:var(--muted);text-decoration:none">Política de Privacidade</a></div>
       </div>
     </footer>
   </div>

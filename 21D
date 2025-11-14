@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Método 21 Dias de Alta Produtividade</title>
+  <meta name="description" content="Método 21 Dias de Alta Produtividade — transforme sua rotina com 10 minutos/dia." />
+  <style>
+    :root{--accent:#2b6cb0;--accent-2:#f6ad55;--bg:#0f1724;--card:#ffffff;--muted:#6b7280}
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; line-height:1.5; color:#0b1220}
+    .container{max-width:1100px;margin:0 auto;padding:28px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+    .logo{display:flex;align-items:center;gap:10px}
+    .logo .brand{font-weight:700;font-size:18px}
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;padding:28px 0}
+    .eyebrow{display:inline-block;background:linear-gradient(90deg,var(--accent),var(--accent-2));-webkit-background-clip:text;color:transparent;font-weight:700}
+    h1{font-size:34px;margin:12px 0}
+    p.lead{color:var(--muted);font-size:16px}
+    .cta{display:flex;gap:12px;margin-top:18px}
+    .btn{background:var(--accent);color:#fff;padding:12px 18px;border-radius:10px;text-decoration:none;font-weight:700}
+    .btn.secondary{background:#eef2ff;color:var(--accent);border:1px solid #dbeafe}
+    .card{background:#fff;border-radius:12px;padding:20px;box-shadow:0 6px 18px rgba(11,17,32,0.06)}
+    .price{font-size:28px;font-weight:800;color:#0b1220}
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:20px}
+    .feature{background:#f8fafc;padding:12px;border-radius:8px;font-size:14px}
+    section{padding:28px 0;border-top:1px solid #eef2f6}
+    .phases{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .phase{background:#fff;padding:16px;border-radius:10px}
+    ul.benefits{list-style:none;padding:0;margin:0}
+    ul.benefits li{padding:8px 0;border-bottom:1px dashed #eef2f6}
+    footer{padding:28px 0;color:var(--muted);font-size:14px}
+    @media(max-width:880px){.hero{grid-template-columns:1fr;}.features{grid-template-columns:1fr 1fr}.phases{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo"><div style="width:44px;height:44px;border-radius:8px;background:linear-gradient(135deg,var(--accent),var(--accent-2))"></div><div class="brand">Método 21 Dias</div></div>
+      <nav><a href="#compra" class="btn">Quero começar</a></nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <div class="eyebrow">Programa de Alta Performance</div>
+          <h1>Transforme 21 dias na rotina mais produtiva da sua vida</h1>
+          <p class="lead">Sem depender de motivação. Sem técnicas complicadas. Apenas 10 minutos por dia para destravar foco, disciplina e resultado.</p>
+          <div class="cta">
+            <a href="#compra" class="btn">QUERO COMEÇAR AGORA — R$79</a>
+            <a href="##bonus" class="btn secondary">Ver bônus</a>
+          </div>
+
+          <div class="features" style="margin-top:22px">
+            <div class="feature">21 dias de tarefas práticas</div>
+            <div class="feature">Checklist diário</div>
+            <div class="feature">Planner semanal + áudios</div>
+          </div>
+        </div>
+
+        <aside>
+          <div class="card">
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <div>
+                <div style="font-size:12px;color:var(--muted)">Oferta especial</div>
+                <div class="price">R$ 79,00</div>
+              </div>
+              <div style="text-align:right">
+                <div style="font-size:12px;color:var(--muted)">Pagamento único</div>
+                <div style="font-size:12px;color:var(--muted)">Acesso imediato</div>
+              </div>
+            </div>
+            <hr style="margin:14px 0;border:none;border-top:1px solid #f1f5f9">
+            <ul style="padding:0;margin:0;list-style:none;font-size:14px;color:#334155">
+              <li style="padding:8px 0">PDF completo do método</li>
+              <li style="padding:8px 0">Checklist diário + planner</li>
+              <li style="padding:8px 0">Áudios de ativação (IA)</li>
+            </ul>
+            <a id="compra" href="#" class="btn" style="display:block;text-align:center;margin-top:16px">QUERO COMEÇAR</a>
+            <div style="font-size:12px;color:var(--muted);margin-top:8px;text-align:center">Garantia de 7 dias — sem perguntas</div>
+          </div>
+        </aside>
+      </section>
+
+      <section>
+        <h2>Como funciona</h2>
+        <p class="lead">O programa é dividido em 3 fases de 7 dias cada. Cada dia tem uma tarefa clara, exercício prático e micro-reflexão.</p>
+        <div class="phases">
+          <div class="phase">
+            <h3>Fase 1 — Reinicialização Mental</h3>
+            <p>Limpeza digital, brain-dump e rituais iniciais.</p>
+          </div>
+          <div class="phase">
+            <h3>Fase 2 — Estrutura & Organização</h3>
+            <p>Planejamento semanal, sistema de tarefas e microvitórias.</p>
+          </div>
+          <div class="phase">
+            <h3>Fase 3 — Execução & Foco Profundo</h3>
+            <p>Blocos de foco, eliminação de distrações e rotina otimizada.</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>O que você vai receber</h2>
+        <ul class="benefits">
+          <li>PDF do Método 21 Dias (download imediato)</li>
+          <li>Checklist diário de execução</li>
+          <li>Planner semanal editável</li>
+          <li>Áudios de ativação para foco</li>
+          <li>Bônus: guia "Produtividade Sem Sofrimento"</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Depoimentos</h2>
+        <p style="color:var(--muted)">"Comecei sem acreditar muito e em 2 semanas já tinha rotina consistente." — João P.</p>
+        <p style="color:var(--muted)">"Menos procrastinação e mais resultados. Recomendo." — Ana M.</p>
+      </section>
+
+      <section>
+        <h2>Garantia</h2>
+        <p class="lead">Teste por 7 dias. Se não perceber melhora, devolvemos seu dinheiro integralmente. Sem perguntas.</p>
+      </section>
+
+      <section style="padding-bottom:60px">
+        <h2>Oferta Especial</h2>
+        <div style="display:flex;gap:16px;flex-wrap:wrap;align-items:center">
+          <div style="flex:1;min-width:220px">
+            <div class="card">
+              <div style="font-size:14px;color:var(--muted)">Pacote Completo</div>
+              <div style="font-size:20px;font-weight:800;margin-top:6px">R$ 79,00</div>
+              <ul style="margin-top:10px;padding:0;list-style:none">
+                <li>PDF + checklist</li>
+                <li>Planner semanal</li>
+                <li>Áudios IA</li>
+              </ul>
+              <a href="#" class="btn" style="display:block;margin-top:12px">QUERO AGORA</a>
+            </div>
+          </div>
+
+          <div style="flex:1;min-width:260px">
+            <div style="background:#fff;padding:16px;border-radius:12px;box-shadow:0 6px 14px rgba(11,17,32,0.04)">
+              <h3>Perguntas frequentes</h3>
+              <p style="margin:6px 0;color:var(--muted)"><strong>Quanto tempo por dia?</strong> 10 minutos por dia, em média.</p>
+              <p style="margin:6px 0;color:var(--muted)"><strong>Preciso apareçer em vídeos?</strong> Não — todo o conteúdo é em PDF e áudios.</p>
+              <p style="margin:6px 0;color:var(--muted)"><strong>É para quem?</strong> Para qualquer pessoa que queira rotina mais produtiva.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px">
+        <div>© 2025 Método 21 Dias — Todos os direitos reservados</div>
+        <div style="color:var(--muted)">Termos • Privacidade</div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
